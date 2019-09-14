@@ -5,8 +5,7 @@ class FlutterManager {
   private let flutterChannelName = "flutter_app_channel"
 
   func present(on viewController: UIViewController, initialRoute: FlutterInitialRoute) {
-    let flutterEngine = (UIApplication.shared.delegate as! AppDelegate).flutterEngine
-    let flutterViewController = FlutterViewController(engine: flutterEngine, nibName: nil, bundle: nil)!
+    let flutterViewController = FlutterViewController(nibName: nil, bundle: nil)
     flutterViewController.setInitialRoute(initialRoute.rawValue)
     setMethodChannel(to: flutterViewController, with: viewController)
     viewController.present(flutterViewController, animated: true, completion: nil)
