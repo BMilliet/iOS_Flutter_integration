@@ -11,7 +11,7 @@ class InitialRoute {
       case "initialSecondView":
         return MainView(InitialSecondView());
       default:
-        print(route);
+        print("route: ${route}");
         return MainView(ErrorView());
     }
   }

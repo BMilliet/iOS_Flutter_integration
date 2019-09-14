@@ -6,7 +6,6 @@ class ViewController1: UIViewController {
 
   let flutterManager = FlutterManager()
 
-
   override func viewDidLoad() {
     super.viewDidLoad()
     label.text = "iOS native view"
