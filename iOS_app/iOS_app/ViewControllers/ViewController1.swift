@@ -3,13 +3,21 @@ import UIKit
 class ViewController1: UIViewController {
 
   @IBOutlet weak var label: UILabel!
-  @IBOutlet weak var flutterLaunchButton: UIButton!
+
+  let flutterManager = FlutterManager()
+
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    label.text = "iOS native view"
+    view.backgroundColor = .orange
   }
 
-  @IBAction func launchFlutter(_ sender: UIButton) {
-    FlutterManager().present(on: self, initialRoute: FlutterInitialRoute.initialRoute)
+  @IBAction func launchFirstInitialFlutterView(_ sender: Any) {
+    flutterManager.present(on: self, initialRoute: FlutterInitialRoute.initialFirstView)
+  }
+  
+  @IBAction func launchSecondInitialFlutterView(_ sender: Any) {
+    flutterManager.present(on: self, initialRoute: FlutterInitialRoute.initialSecondView)
   }
 }
