@@ -34,17 +34,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xx5-iW-IIO">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xx5-iW-IIO">
                                 <rect key="frame" x="15" y="221" width="288" height="67"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="8hi-Cb-gdu"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgW-8j-oXG">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgW-8j-oXG">
                                 <rect key="frame" x="16" y="395" width="288" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.73297846499999997" blue="0.6799201091" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="185-xF-bti"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -55,6 +59,14 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.61721529617377624" blue="0.27333596325464171" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Xx5-iW-IIO" firstAttribute="top" secondItem="qfs-WU-OZS" secondAttribute="top" constant="201" id="3ex-6a-bap"/>
+                            <constraint firstItem="qfs-WU-OZS" firstAttribute="trailing" secondItem="Xx5-iW-IIO" secondAttribute="trailing" constant="17" id="45Y-CI-pvB"/>
+                            <constraint firstItem="qgW-8j-oXG" firstAttribute="leading" secondItem="qfs-WU-OZS" secondAttribute="leading" constant="16" id="I6M-yB-cvu"/>
+                            <constraint firstItem="Xx5-iW-IIO" firstAttribute="leading" secondItem="qfs-WU-OZS" secondAttribute="leading" constant="15" id="WjR-Ik-Qrq"/>
+                            <constraint firstItem="qfs-WU-OZS" firstAttribute="bottom" secondItem="qgW-8j-oXG" secondAttribute="bottom" constant="64" id="bea-3c-MQW"/>
+                            <constraint firstItem="qfs-WU-OZS" firstAttribute="trailing" secondItem="qgW-8j-oXG" secondAttribute="trailing" constant="16" id="ify-a9-NX1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="qfs-WU-OZS"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="topRated" id="peF-pi-nKi"/>
