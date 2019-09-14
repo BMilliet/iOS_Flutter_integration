@@ -1,5 +1,3 @@
-import FlutterPluginRegistrant
-import Foundation
 import Flutter
 
 class FlutterManager {
@@ -8,14 +6,21 @@ class FlutterManager {
 
   func present(on viewController: UIViewController, initialRoute: FlutterInitialRoute) {
     let flutterViewController = FlutterViewController(nibName: nil, bundle: nil)
-    //flutterViewController.setInitialRoute(initialRoute.rawValue)
-    //setMethodChannel(to: flutterViewController, with: viewController)
+    flutterViewController.setInitialRoute(initialRoute.rawValue)
+    setMethodChannel(to: flutterViewController, with: viewController)
     viewController.present(flutterViewController, animated: true, completion: nil)
   }
 
   private func setMethodChannel(to flutterViewController: FlutterViewController, with viewController: UIViewController) {
     let flutterChannel = FlutterMethodChannel(name: flutterChannelName, binaryMessenger: flutterViewController)
     flutterChannel.setMethodCallHandler({ method, result in
+      switch method.method {
+      default: self.methodNotFound()
+      }
     })
+  }
+
+  private func methodNotFound() {
+    print("Method not found")
   }
 }

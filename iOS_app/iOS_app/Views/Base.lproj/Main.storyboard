@@ -34,32 +34,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xx5-iW-IIO">
-                                <rect key="frame" x="15" y="221" width="288" height="67"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xx5-iW-IIO">
+                                <rect key="frame" x="15" y="120" width="288" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="8hi-Cb-gdu"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgW-8j-oXG">
-                                <rect key="frame" x="16" y="395" width="288" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0z-rg-dHH">
+                                <rect key="frame" x="15" y="429" width="288" height="56"/>
                                 <color key="backgroundColor" red="0.0" green="0.73297846499999997" blue="0.6799201091" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="29x-4g-OV8"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="launchFlutter:" destination="duK-S9-MhT" eventType="touchUpInside" id="HQR-ev-ZU7"/>
+                                    <action selector="launchSecondInitialFlutterView:" destination="duK-S9-MhT" eventType="touchUpInside" id="JWX-BZ-zkK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2E-E2-h5F">
+                                <rect key="frame" x="16" y="349" width="288" height="56"/>
+                                <color key="backgroundColor" red="0.0" green="0.73297846499999997" blue="0.6799201091" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="GNR-12-eOa"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="launchFirstInitialFlutterView:" destination="duK-S9-MhT" eventType="touchUpInside" id="SGY-X8-ra6"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.61721529617377624" blue="0.27333596325464171" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Xx5-iW-IIO" firstAttribute="top" secondItem="qfs-WU-OZS" secondAttribute="top" constant="100" id="3ex-6a-bap"/>
+                            <constraint firstItem="qfs-WU-OZS" firstAttribute="trailing" secondItem="Xx5-iW-IIO" secondAttribute="trailing" constant="17" id="45Y-CI-pvB"/>
+                            <constraint firstItem="qfs-WU-OZS" firstAttribute="trailing" secondItem="G2E-E2-h5F" secondAttribute="trailing" constant="16" id="GTZ-wN-xad"/>
+                            <constraint firstItem="G2E-E2-h5F" firstAttribute="leading" secondItem="qfs-WU-OZS" secondAttribute="leading" constant="16" id="NwZ-CX-o3k"/>
+                            <constraint firstItem="qfs-WU-OZS" firstAttribute="trailing" secondItem="A0z-rg-dHH" secondAttribute="trailing" constant="17" id="SzN-4b-AR4"/>
+                            <constraint firstItem="Xx5-iW-IIO" firstAttribute="leading" secondItem="qfs-WU-OZS" secondAttribute="leading" constant="15" id="WjR-Ik-Qrq"/>
+                            <constraint firstItem="A0z-rg-dHH" firstAttribute="top" secondItem="G2E-E2-h5F" secondAttribute="bottom" constant="24" id="aHy-kq-5cz"/>
+                            <constraint firstItem="A0z-rg-dHH" firstAttribute="leading" secondItem="qfs-WU-OZS" secondAttribute="leading" constant="15" id="dKh-0C-3V4"/>
+                            <constraint firstItem="qfs-WU-OZS" firstAttribute="bottom" secondItem="A0z-rg-dHH" secondAttribute="bottom" constant="34" id="ua0-lz-Uwb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="qfs-WU-OZS"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="topRated" id="peF-pi-nKi"/>
                     <connections>
-                        <outlet property="flutterLaunchButton" destination="qgW-8j-oXG" id="IEB-ma-2uM"/>
                         <outlet property="label" destination="Xx5-iW-IIO" id="LRr-BG-EE6"/>
                     </connections>
                 </viewController>

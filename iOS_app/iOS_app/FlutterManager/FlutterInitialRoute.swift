@@ -1,3 +1,4 @@
 enum FlutterInitialRoute: String {
-  case initialRoute
+  case initialFirstView
+  case initialSecondView
 }
