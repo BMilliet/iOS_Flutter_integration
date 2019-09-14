@@ -49,7 +49,10 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="29x-4g-OV8"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Flutter initial second view">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="launchSecondInitialFlutterView:" destination="duK-S9-MhT" eventType="touchUpInside" id="JWX-BZ-zkK"/>
                                 </connections>
@@ -60,7 +63,10 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="GNR-12-eOa"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Flutter initial first view">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="launchFirstInitialFlutterView:" destination="duK-S9-MhT" eventType="touchUpInside" id="SGY-X8-ra6"/>
                                 </connections>

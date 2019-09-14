@@ -32,12 +32,18 @@ class _InitialFirstViewState extends State<InitialFirstView> {
     return Container(
         color: Colors.cyan,
         child: Center(
-          child: FlatButton(
-            child: Text("Next flutter view"),
-            onPressed: () {
-              Navigator.pushNamed(context, NamedRoutes.viewOne);
-            },
-          ),
-        ));
+            child: Column(
+          children: <Widget>[
+            Container(
+              child: Text("Flutter initial first view"),
+            ),
+            RaisedButton(
+              child: Text("Next flutter view"),
+              onPressed: () {
+                Navigator.pushNamed(context, NamedRoutes.viewOne);
+              },
+            )
+          ],
+        )));
   }
 }
