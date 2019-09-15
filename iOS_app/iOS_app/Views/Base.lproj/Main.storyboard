@@ -64,11 +64,22 @@
                                 </state>
                                 <connections>
                                     <action selector="launchSecondInitialFlutterView:" destination="duK-S9-MhT" eventType="touchUpInside" id="3Se-8U-uTE"/>
+                                    <action selector="launchThirdInitialFlutterView:" destination="eOW-D2-9mB" eventType="touchUpInside" id="TKW-gE-r9u"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2T3-7Y-l5H">
+                                <rect key="frame" x="16" y="180" width="288" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="6Ex-g8-0K4"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="2T3-7Y-l5H" firstAttribute="leading" secondItem="PTg-ZJ-WFb" secondAttribute="leading" constant="16" id="KvV-mk-MBG"/>
                             <constraint firstItem="fN0-rd-wlv" firstAttribute="leading" secondItem="PTg-ZJ-WFb" secondAttribute="leading" constant="16" id="OW4-dK-bL0"/>
                             <constraint firstItem="24H-DM-J5o" firstAttribute="top" secondItem="fN0-rd-wlv" secondAttribute="bottom" constant="5" id="PcO-PV-a6R"/>
                             <constraint firstItem="2Mn-ZI-bZ3" firstAttribute="leading" secondItem="PTg-ZJ-WFb" secondAttribute="leading" constant="16" id="SFQ-yv-wIp"/>
@@ -76,6 +87,8 @@
                             <constraint firstItem="PTg-ZJ-WFb" firstAttribute="trailing" secondItem="2Mn-ZI-bZ3" secondAttribute="trailing" constant="16" id="Z9t-Mo-AWv"/>
                             <constraint firstItem="PTg-ZJ-WFb" firstAttribute="trailing" secondItem="24H-DM-J5o" secondAttribute="trailing" constant="16" id="cMQ-eK-cxe"/>
                             <constraint firstItem="fN0-rd-wlv" firstAttribute="top" secondItem="PTg-ZJ-WFb" secondAttribute="top" constant="50" id="n9I-o0-lTO"/>
+                            <constraint firstItem="2T3-7Y-l5H" firstAttribute="top" secondItem="24H-DM-J5o" secondAttribute="bottom" constant="5" id="tgE-gg-G9g"/>
+                            <constraint firstItem="PTg-ZJ-WFb" firstAttribute="trailing" secondItem="2T3-7Y-l5H" secondAttribute="trailing" constant="16" id="u9H-vJ-iF8"/>
                             <constraint firstItem="24H-DM-J5o" firstAttribute="leading" secondItem="PTg-ZJ-WFb" secondAttribute="leading" constant="16" id="uuD-Bj-QdF"/>
                             <constraint firstItem="PTg-ZJ-WFb" firstAttribute="bottom" secondItem="2Mn-ZI-bZ3" secondAttribute="bottom" constant="34" id="vor-6l-qap"/>
                         </constraints>
@@ -84,6 +97,8 @@
                     <tabBarItem key="tabBarItem" systemItem="mostRecent" id="X2g-BM-A4K"/>
                     <connections>
                         <outlet property="label" destination="fN0-rd-wlv" id="OGl-ux-7u3"/>
+                        <outlet property="label2" destination="24H-DM-J5o" id="joG-RK-A2v"/>
+                        <outlet property="textField" destination="2T3-7Y-l5H" id="eV4-cx-2td"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CFI-vX-xI6" userLabel="First Responder" sceneMemberID="firstResponder"/>

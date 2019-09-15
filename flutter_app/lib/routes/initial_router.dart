@@ -2,6 +2,7 @@ import 'package:flutter_app/views/helper_views/error_view.dart';
 import 'package:flutter_app/views/initial_views/initial_first_view.dart';
 import 'package:flutter_app/views/initial_views/initial_second_view.dart';
 import 'package:flutter_app/views/helper_views/main_view.dart';
+import 'package:flutter_app/views/initial_views/initial_third_view.dart';
 
 class InitialRoute {
   static launch(String route) {
@@ -10,6 +11,8 @@ class InitialRoute {
         return MainView(InitialFirstView());
       case "initialSecondView":
         return MainView(InitialSecondView());
+      case "initialThirdView":
+        return MainView(InitialThirdView());
       default:
         return MainView(ErrorView());
     }
