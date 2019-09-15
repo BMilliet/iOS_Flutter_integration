@@ -8,8 +8,24 @@ class ViewOne extends StatefulWidget {
 class _ViewOneState extends State<ViewOne> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.yellow,
+    return Scaffold(
+      appBar: _appBar(),
+      body: _body(),
     );
+  }
+
+  AppBar _appBar() {
+    return AppBar(
+      title: Text("View One"),
+    );
+  }
+
+  Widget _body() {
+    return Container(
+        color: Colors.cyan,
+        child: Center(
+            child: Container(
+          child: Text("Flutter view"),
+        )));
   }
 }

@@ -28,6 +28,11 @@ class _InitialSecondViewState extends State<InitialSecondView> {
   }
 
   Widget _body() {
-    return Container(color: Colors.green);
+    return Container(
+        color: Colors.cyan,
+        child: Center(
+            child: Container(
+          child: Text("Flutter view"),
+        )));
   }
 }

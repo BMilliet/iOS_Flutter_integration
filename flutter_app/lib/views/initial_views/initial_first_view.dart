@@ -35,7 +35,8 @@ class _InitialFirstViewState extends State<InitialFirstView> {
             child: Column(
           children: <Widget>[
             Container(
-              child: Text("Flutter initial first view"),
+              margin: EdgeInsets.only(top: 50, bottom: 100),
+              child: Text("Flutter view"),
             ),
             RaisedButton(
               child: Text("Next flutter view"),

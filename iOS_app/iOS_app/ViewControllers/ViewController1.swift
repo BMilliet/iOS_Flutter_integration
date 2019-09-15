@@ -8,7 +8,7 @@ class ViewController1: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    label.text = "iOS native view"
+    label.text = "iOS native view 1"
     view.backgroundColor = .orange
   }
 
