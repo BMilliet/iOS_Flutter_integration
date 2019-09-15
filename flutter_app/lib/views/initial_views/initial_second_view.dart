@@ -2,11 +2,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class InitialFirstView extends StatefulWidget {
-  _InitialFirstViewState createState() => _InitialFirstViewState();
+class InitialSecondView extends StatefulWidget {
+  _InitialSecondViewState createState() => _InitialSecondViewState();
 }
 
-class _InitialFirstViewState extends State<InitialFirstView> {
+class _InitialSecondViewState extends State<InitialSecondView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,7 +17,7 @@ class _InitialFirstViewState extends State<InitialFirstView> {
 
   AppBar _appBar() {
     return AppBar(
-      title: Text("Initial First View"),
+      title: Text("Initial Second View"),
       leading: IconButton(
         icon: Icon(Icons.arrow_back_ios),
         onPressed: () {
@@ -28,6 +28,11 @@ class _InitialFirstViewState extends State<InitialFirstView> {
   }
 
   Widget _body() {
-    return Container(color: Colors.cyan);
+    return Container(
+        color: Colors.cyan,
+        child: Center(
+            child: Container(
+          child: Text("Flutter view"),
+        )));
   }
 }

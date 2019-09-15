@@ -1,7 +1,7 @@
-import 'package:flutter_app/views/error_view.dart';
-import 'package:flutter_app/views/initial_first_view.dart';
-import 'package:flutter_app/views/initial_second_view.dart';
-import 'package:flutter_app/views/main_view.dart';
+import 'package:flutter_app/views/helper_views/error_view.dart';
+import 'package:flutter_app/views/initial_views/initial_first_view.dart';
+import 'package:flutter_app/views/initial_views/initial_second_view.dart';
+import 'package:flutter_app/views/helper_views/main_view.dart';
 
 class InitialRoute {
   static launch(String route) {
@@ -11,7 +11,6 @@ class InitialRoute {
       case "initialSecondView":
         return MainView(InitialSecondView());
       default:
-        print("route: ${route}");
         return MainView(ErrorView());
     }
   }
