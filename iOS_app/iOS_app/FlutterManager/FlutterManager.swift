@@ -29,7 +29,7 @@ class FlutterManager {
   }
 
   private func sendMessageToFlutter() -> String {
-    return messageFromFlutter
+    return messageToFlutter
   }
 
   private func methodNotFound() {
