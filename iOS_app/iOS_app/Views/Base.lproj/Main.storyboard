@@ -187,10 +187,10 @@
             </objects>
             <point key="canvasLocation" x="421.875" y="-311.61971830985914"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Tab Bar-->
         <scene sceneID="zSA-Bu-SwE">
             <objects>
-                <tabBarController id="jdr-0g-3H7" sceneMemberID="viewController">
+                <tabBarController id="jdr-0g-3H7" customClass="MainTabBar" customModule="iOS_app" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="69A-kr-Aak">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
