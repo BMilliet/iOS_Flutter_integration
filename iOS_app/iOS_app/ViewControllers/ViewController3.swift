@@ -6,7 +6,6 @@ class ViewController3: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    super.viewDidLoad()
     label.text = "iOS native view 3"
     view.backgroundColor = .orange
   }
