@@ -15,6 +15,7 @@
 		1503F846232D1B9100F99AE9 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1503F845232D1B9100F99AE9 /* ViewController2.swift */; };
 		1503F848232D241E00F99AE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1503F847232D241E00F99AE9 /* Assets.xcassets */; };
 		15ABD041232ED96100ED5A8D /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ABD040232ED96100ED5A8D /* ViewController3.swift */; };
+		15B3F8F82331862200FA0AA1 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B3F8F72331862200FA0AA1 /* MainTabBar.swift */; };
 		19E6AEC32CECFB1492BA217D /* Pods_iOS_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4583B009591274C95863A1F2 /* Pods_iOS_app.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		1503F845232D1B9100F99AE9 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		1503F847232D241E00F99AE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15ABD040232ED96100ED5A8D /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+		15B3F8F72331862200FA0AA1 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		4583B009591274C95863A1F2 /* Pods_iOS_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C38C65AF76BB71FEDF8A5C1 /* Pods-iOS_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_app.release.xcconfig"; path = "Target Support Files/Pods-iOS_app/Pods-iOS_app.release.xcconfig"; sourceTree = "<group>"; };
 		98BF241E306A7F264798FEB2 /* Pods-iOS_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_app.debug.xcconfig"; path = "Target Support Files/Pods-iOS_app/Pods-iOS_app.debug.xcconfig"; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				1503F82C232D142400F99AE9 /* ViewController1.swift */,
 				1503F845232D1B9100F99AE9 /* ViewController2.swift */,
 				15ABD040232ED96100ED5A8D /* ViewController3.swift */,
+				15B3F8F72331862200FA0AA1 /* MainTabBar.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			files = (
 				1503F846232D1B9100F99AE9 /* ViewController2.swift in Sources */,
 				1503F82D232D142400F99AE9 /* ViewController1.swift in Sources */,
+				15B3F8F82331862200FA0AA1 /* MainTabBar.swift in Sources */,
 				15ABD041232ED96100ED5A8D /* ViewController3.swift in Sources */,
 				1503F83E232D18A100F99AE9 /* FlutterManager.swift in Sources */,
 				1503F82B232D142400F99AE9 /* AppDelegate.swift in Sources */,
