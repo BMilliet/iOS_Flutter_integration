@@ -19,6 +19,7 @@ class FlutterManager {
       switch method.method {
       case "getMessageFromIOS": result(self.sendMessageToFlutter())
       case "sendMessageToIOS": self.getMessageFromFlutter(method)
+      case "openiOSView": self.openiOSView()
       default: self.methodNotFound()
       }
     })
@@ -30,6 +31,11 @@ class FlutterManager {
 
   private func sendMessageToFlutter() -> String {
     return messageToFlutter
+  }
+
+  private func openiOSView() {
+    let controller = ViewController4()
+    Helper.getTopMostViewController()?.present(controller, animated: true, completion: nil)
   }
 
   private func methodNotFound() {

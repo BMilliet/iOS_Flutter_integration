@@ -12,6 +12,10 @@ class Channel {
     _methodChannel.invokeMethod("sendMessageToIOS", string);
   }
 
+  void openiOSView() {
+    _methodChannel.invokeMethod("openiOSView");
+  }
+
   Future<String> getMessageFromIOS() async {
     try {
       return await _methodChannel.invokeMethod("getMessageFromIOS");

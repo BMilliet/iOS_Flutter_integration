@@ -4,4 +4,5 @@ enum FlutterInitialRoute: String {
   case initialThirdView
   case initialFourthView
   case initialFifthView
+  case initialSixthView
 }

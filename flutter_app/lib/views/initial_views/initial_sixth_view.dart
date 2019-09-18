@@ -1,13 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_app/channel/channel.dart';
+import 'package:flutter_app/routes/named_routes.dart';
 
-class ViewTwo extends StatefulWidget {
-  _ViewTwoState createState() => _ViewTwoState();
+class InitialSixthView extends StatefulWidget {
+  _InitialSixthViewState createState() => _InitialSixthViewState();
 }
 
-class _ViewTwoState extends State<ViewTwo> {
+class _InitialSixthViewState extends State<InitialSixthView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,7 +18,13 @@ class _ViewTwoState extends State<ViewTwo> {
 
   AppBar _appBar() {
     return AppBar(
-      title: Text("View Two"),
+      title: Text("Initial Sixth View"),
+      leading: IconButton(
+        icon: Icon(Icons.arrow_back_ios),
+        onPressed: () {
+          SystemNavigator.pop();
+        },
+      ),
     );
   }
 
@@ -33,10 +39,9 @@ class _ViewTwoState extends State<ViewTwo> {
               child: Text("Flutter view"),
             ),
             RaisedButton(
-              child: Text("Go to another iOS"),
+              child: Text("Next flutter view"),
               onPressed: () {
-                SystemNavigator.pop();
-                Channel().openiOSView();
+                Navigator.pushNamed(context, NamedRoutes.viewTwo);
               },
             )
           ],

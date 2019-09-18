@@ -4,6 +4,7 @@ import 'package:flutter_app/views/initial_views/initial_first_view.dart';
 import 'package:flutter_app/views/initial_views/initial_fourth_view.dart';
 import 'package:flutter_app/views/initial_views/initial_second_view.dart';
 import 'package:flutter_app/views/helper_views/main_view.dart';
+import 'package:flutter_app/views/initial_views/initial_sixth_view.dart';
 import 'package:flutter_app/views/initial_views/initial_third_view.dart';
 
 class InitialRoute {
@@ -19,6 +20,8 @@ class InitialRoute {
         return MainView(InitialFourthView());
       case "initialFifthView":
         return MainView(InitialFifthView());
+      case "initialSixthView":
+        return MainView(InitialSixthView());
       default:
         return MainView(ErrorView());
     }
