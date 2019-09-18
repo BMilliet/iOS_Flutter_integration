@@ -1,5 +1,6 @@
 import UIKit
 import Flutter
+import FlutterPluginRegistrant
 
 class MainTabBar: UITabBarController {
   override func viewDidLoad() {
