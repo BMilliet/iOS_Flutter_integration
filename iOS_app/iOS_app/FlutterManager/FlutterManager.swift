@@ -6,10 +6,12 @@ class FlutterManager {
   private let flutterChannelName = "flutter_app_channel"
   var messageFromFlutter = ""
   var messageToFlutter = ""
+  var currenteView: UIViewController?
 
   func present(on viewController: UIViewController, initialRoute: FlutterInitialRoute) {
     let flutterViewController = FlutterViewController(nibName: nil, bundle: nil)
     flutterViewController.setInitialRoute(initialRoute.rawValue)
+    currenteView = flutterViewController
     setMethodChannel(to: flutterViewController, with: viewController)
     viewController.present(flutterViewController, animated: true, completion: nil)
   }
@@ -23,6 +25,7 @@ class FlutterManager {
       case "sendMessageToIOS": self.getMessageFromFlutter(method)
       case "openiOSView": self.openiOSView()
       case "openFlutterView": self.openFlutterView()
+      case "popFlutterView": self.popFlutterView(method)
       default: self.methodNotFound()
       }
     })
@@ -38,12 +41,17 @@ class FlutterManager {
 
   private func openiOSView() {
     let controller = ViewController4()
-    Helper.getTopMostViewController()?.present(controller, animated: true, completion: nil)
+    Helper.getLastRootViewController()!.present(controller, animated: false, completion: nil)
   }
 
   private func openFlutterView() {
     let topController = Helper.getTopMostViewController()!
     self.present(on: topController, initialRoute: FlutterInitialRoute.initialSixthView)
+  }
+
+  private func popFlutterView(_ call: FlutterMethodCall) {
+    let animated = call.arguments as! Bool
+    currenteView?.dismiss(animated: animated, completion: nil)
   }
 
   private func methodNotFound() {

@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+import 'package:flutter_app/channel/channel.dart';
 import 'package:flutter_app/routes/named_routes.dart';
 
 class InitialFirstView extends StatefulWidget {
@@ -22,7 +22,7 @@ class _InitialFirstViewState extends State<InitialFirstView> {
       leading: IconButton(
         icon: Icon(Icons.arrow_back_ios),
         onPressed: () {
-          SystemNavigator.pop();
+          Channel().popFlutterView();
         },
       ),
     );

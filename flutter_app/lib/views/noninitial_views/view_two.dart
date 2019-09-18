@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_app/channel/channel.dart';
 
 class ViewTwo extends StatefulWidget {
@@ -8,6 +7,8 @@ class ViewTwo extends StatefulWidget {
 }
 
 class _ViewTwoState extends State<ViewTwo> {
+  final _channel = Channel();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,8 +36,8 @@ class _ViewTwoState extends State<ViewTwo> {
             RaisedButton(
               child: Text("Go to another iOS"),
               onPressed: () {
-                SystemNavigator.pop();
-                Channel().openiOSView();
+                _channel.popFlutterView(animated: false);
+                _channel.openiOSView();
               },
             )
           ],

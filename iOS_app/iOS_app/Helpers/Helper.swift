@@ -8,4 +8,8 @@ class Helper {
     }
     return topMostViewController
   }
+
+  static func getLastRootViewController() -> UIViewController? {
+    return UIApplication.shared.keyWindow?.rootViewController
+  }
 }
