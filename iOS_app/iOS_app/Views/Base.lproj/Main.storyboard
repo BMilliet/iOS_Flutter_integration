@@ -114,16 +114,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgm-kc-1cI">
+                                <rect key="frame" x="16" y="67" width="288" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="oYo-8O-bpd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="PTg-ZJ-WFb" firstAttribute="trailing" secondItem="rgm-kc-1cI" secondAttribute="trailing" constant="16" id="0ZM-2m-j4O"/>
                             <constraint firstItem="kjU-6w-14H" firstAttribute="leading" secondItem="PTg-ZJ-WFb" secondAttribute="leading" constant="16" id="2XK-aj-cvr"/>
-                            <constraint firstItem="24H-DM-J5o" firstAttribute="top" secondItem="PTg-ZJ-WFb" secondAttribute="top" constant="105" id="4yI-wJ-d0T"/>
                             <constraint firstItem="2Mn-ZI-bZ3" firstAttribute="top" secondItem="kjU-6w-14H" secondAttribute="bottom" constant="30" id="7bs-Dm-vEj"/>
+                            <constraint firstItem="24H-DM-J5o" firstAttribute="top" secondItem="rgm-kc-1cI" secondAttribute="bottom" constant="8" id="I30-Xe-vqr"/>
                             <constraint firstItem="2T3-7Y-l5H" firstAttribute="leading" secondItem="PTg-ZJ-WFb" secondAttribute="leading" constant="16" id="KvV-mk-MBG"/>
                             <constraint firstItem="2Mn-ZI-bZ3" firstAttribute="leading" secondItem="PTg-ZJ-WFb" secondAttribute="leading" constant="16" id="SFQ-yv-wIp"/>
+                            <constraint firstItem="rgm-kc-1cI" firstAttribute="leading" secondItem="PTg-ZJ-WFb" secondAttribute="leading" constant="16" id="TIA-fU-zoj"/>
                             <constraint firstItem="PTg-ZJ-WFb" firstAttribute="trailing" secondItem="2Mn-ZI-bZ3" secondAttribute="trailing" constant="16" id="Z9t-Mo-AWv"/>
                             <constraint firstItem="PTg-ZJ-WFb" firstAttribute="trailing" secondItem="24H-DM-J5o" secondAttribute="trailing" constant="16" id="cMQ-eK-cxe"/>
+                            <constraint firstItem="rgm-kc-1cI" firstAttribute="top" secondItem="PTg-ZJ-WFb" secondAttribute="top" constant="47" id="pVU-ja-92L"/>
                             <constraint firstItem="2T3-7Y-l5H" firstAttribute="top" secondItem="24H-DM-J5o" secondAttribute="bottom" constant="5" id="tgE-gg-G9g"/>
                             <constraint firstItem="PTg-ZJ-WFb" firstAttribute="trailing" secondItem="2T3-7Y-l5H" secondAttribute="trailing" constant="16" id="u9H-vJ-iF8"/>
                             <constraint firstItem="24H-DM-J5o" firstAttribute="leading" secondItem="PTg-ZJ-WFb" secondAttribute="leading" constant="16" id="uuD-Bj-QdF"/>
@@ -135,7 +147,7 @@
                     <tabBarItem key="tabBarItem" systemItem="mostRecent" id="X2g-BM-A4K"/>
                     <connections>
                         <outlet property="flutterLabel" destination="kjU-6w-14H" id="gu3-qT-lMg"/>
-                        <outlet property="label" destination="fN0-rd-wlv" id="OGl-ux-7u3"/>
+                        <outlet property="label" destination="rgm-kc-1cI" id="zPH-T0-yCf"/>
                         <outlet property="label2" destination="24H-DM-J5o" id="joG-RK-A2v"/>
                         <outlet property="textField" destination="2T3-7Y-l5H" id="eV4-cx-2td"/>
                     </connections>

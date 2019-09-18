@@ -17,6 +17,7 @@
 		15ABD041232ED96100ED5A8D /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ABD040232ED96100ED5A8D /* ViewController3.swift */; };
 		15B3F8F82331862200FA0AA1 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B3F8F72331862200FA0AA1 /* MainTabBar.swift */; };
 		15B3F8FA2331941900FA0AA1 /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B3F8F92331941900FA0AA1 /* ViewController4.swift */; };
+		15FB16E6233261B2002942DD /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FB16E5233261B2002942DD /* Helper.swift */; };
 		19E6AEC32CECFB1492BA217D /* Pods_iOS_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4583B009591274C95863A1F2 /* Pods_iOS_app.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		15ABD040232ED96100ED5A8D /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 		15B3F8F72331862200FA0AA1 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		15B3F8F92331941900FA0AA1 /* ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
+		15FB16E5233261B2002942DD /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		4583B009591274C95863A1F2 /* Pods_iOS_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C38C65AF76BB71FEDF8A5C1 /* Pods-iOS_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_app.release.xcconfig"; path = "Target Support Files/Pods-iOS_app/Pods-iOS_app.release.xcconfig"; sourceTree = "<group>"; };
 		98BF241E306A7F264798FEB2 /* Pods-iOS_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_app.debug.xcconfig"; path = "Target Support Files/Pods-iOS_app/Pods-iOS_app.debug.xcconfig"; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 		1503F829232D142400F99AE9 /* iOS_app */ = {
 			isa = PBXGroup;
 			children = (
+				15FB16E423326193002942DD /* Helpers */,
 				1503F844232D1B4700F99AE9 /* Support */,
 				1503F843232D1B3300F99AE9 /* Views */,
 				1503F842232D1AD600F99AE9 /* ViewControllers */,
@@ -116,6 +119,14 @@
 				1503F847232D241E00F99AE9 /* Assets.xcassets */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		15FB16E423326193002942DD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				15FB16E5233261B2002942DD /* Helper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		AD19072E74CE517E8476A98E /* Frameworks */ = {
@@ -272,6 +283,7 @@
 				15B3F8F82331862200FA0AA1 /* MainTabBar.swift in Sources */,
 				15B3F8FA2331941900FA0AA1 /* ViewController4.swift in Sources */,
 				15ABD041232ED96100ED5A8D /* ViewController3.swift in Sources */,
+				15FB16E6233261B2002942DD /* Helper.swift in Sources */,
 				1503F83E232D18A100F99AE9 /* FlutterManager.swift in Sources */,
 				1503F82B232D142400F99AE9 /* AppDelegate.swift in Sources */,
 				1503F841232D1AAF00F99AE9 /* FlutterInitialRoute.swift in Sources */,

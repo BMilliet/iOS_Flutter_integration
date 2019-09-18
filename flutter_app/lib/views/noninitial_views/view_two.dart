@@ -36,7 +36,6 @@ class _ViewTwoState extends State<ViewTwo> {
               child: Text("Go to another iOS"),
               onPressed: () {
                 Channel().openiOSView();
-                SystemNavigator.pop();
               },
             )
           ],
