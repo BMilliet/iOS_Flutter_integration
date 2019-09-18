@@ -1,4 +1,5 @@
 import Flutter
+import FlutterPluginRegistrant
 
 class FlutterManager {
 
@@ -14,12 +15,14 @@ class FlutterManager {
   }
 
   private func setMethodChannel(to flutterViewController: FlutterViewController, with viewController: UIViewController) {
+    GeneratedPluginRegistrant.register(with: flutterViewController)
     let flutterChannel = FlutterMethodChannel(name: flutterChannelName, binaryMessenger: flutterViewController)
     flutterChannel.setMethodCallHandler({ method, result in
       switch method.method {
       case "getMessageFromIOS": result(self.sendMessageToFlutter())
       case "sendMessageToIOS": self.getMessageFromFlutter(method)
       case "openiOSView": self.openiOSView()
+      case "openFlutterView": self.openFlutterView()
       default: self.methodNotFound()
       }
     })
@@ -36,6 +39,11 @@ class FlutterManager {
   private func openiOSView() {
     let controller = ViewController4()
     Helper.getTopMostViewController()?.present(controller, animated: true, completion: nil)
+  }
+
+  private func openFlutterView() {
+    let topController = Helper.getTopMostViewController()!
+    self.present(on: topController, initialRoute: FlutterInitialRoute.initialSixthView)
   }
 
   private func methodNotFound() {

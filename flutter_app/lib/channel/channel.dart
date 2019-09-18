@@ -16,6 +16,10 @@ class Channel {
     _methodChannel.invokeMethod("openiOSView");
   }
 
+  void openFlutterView() {
+    _methodChannel.invokeMethod("openFlutterView");
+  }
+
   Future<String> getMessageFromIOS() async {
     try {
       return await _methodChannel.invokeMethod("getMessageFromIOS");
