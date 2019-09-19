@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_app/channel/channel.dart';
 
 class InitialFifthView extends StatefulWidget {
   _InitialFifthViewState createState() => _InitialFifthViewState();
@@ -21,8 +22,26 @@ class _InitialFifthViewState extends State<InitialFifthView> {
     return Container(
         color: Colors.cyan,
         child: Center(
-            child: Container(
-          child: Text("Flutter view 2 in iOS tabbar"),
+            child: Column(
+          children: <Widget>[
+            Container(
+              margin: EdgeInsets.only(top: 50, bottom: 100),
+              child: Text("Flutter view 2 in iOS tabbar"),
+            ),
+            RaisedButton(
+              child: Text("Next flutter view"),
+              onPressed: () {
+                Channel().openFlutterView();
+              },
+            ),
+            Container(height: 20),
+            RaisedButton(
+              child: Text("Next iOS view"),
+              onPressed: () {
+                Channel().openiOSView();
+              },
+            )
+          ],
         )));
   }
 }

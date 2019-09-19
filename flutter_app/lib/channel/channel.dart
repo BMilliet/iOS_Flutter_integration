@@ -16,6 +16,14 @@ class Channel {
     _methodChannel.invokeMethod("openiOSView");
   }
 
+  void openFlutterView() {
+    _methodChannel.invokeMethod("openFlutterView");
+  }
+
+  void popFlutterView({bool animated = true}) {
+    _methodChannel.invokeMethod("popFlutterView", animated);
+  }
+
   Future<String> getMessageFromIOS() async {
     try {
       return await _methodChannel.invokeMethod("getMessageFromIOS");

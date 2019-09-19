@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_app/channel/channel.dart';
 
 class InitialThirdView extends StatefulWidget {
@@ -8,6 +7,7 @@ class InitialThirdView extends StatefulWidget {
 }
 
 class _InitialThirdViewState extends State<InitialThirdView> {
+  final _channel = Channel();
   final _textFieldController = TextEditingController();
   Future<String> _messageFromIOS = Channel().getMessageFromIOS();
 
@@ -25,7 +25,7 @@ class _InitialThirdViewState extends State<InitialThirdView> {
       leading: IconButton(
         icon: Icon(Icons.arrow_back_ios),
         onPressed: () {
-          SystemNavigator.pop();
+          _channel.popFlutterView();
         },
       ),
     );
@@ -60,8 +60,8 @@ class _InitialThirdViewState extends State<InitialThirdView> {
                     RaisedButton(
                       child: Text("Send message to iOS"),
                       onPressed: () {
-                        Channel().sendMessageToIOS(_textFieldController.text);
-                        SystemNavigator.pop();
+                        _channel.sendMessageToIOS(_textFieldController.text);
+                        _channel.popFlutterView();
                       },
                     )
                   ],

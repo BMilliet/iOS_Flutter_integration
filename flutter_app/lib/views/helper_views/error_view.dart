@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+import 'package:flutter_app/channel/channel.dart';
 
 class ErrorView extends StatelessWidget {
   @override
@@ -17,7 +17,7 @@ class ErrorView extends StatelessWidget {
       leading: IconButton(
         icon: Icon(Icons.arrow_back_ios),
         onPressed: () {
-          SystemNavigator.pop();
+          Channel().popFlutterView();
         },
       ),
     );
