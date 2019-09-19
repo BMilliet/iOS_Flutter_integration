@@ -2,21 +2,28 @@ PODS:
   - Flutter (1.0.0)
   - FlutterPluginRegistrant (0.0.1):
     - Flutter
+    - webview_flutter
+  - webview_flutter (0.0.1):
+    - Flutter
 
 DEPENDENCIES:
   - Flutter (from `../flutter_app/.ios/Flutter/engine`)
   - FlutterPluginRegistrant (from `../flutter_app/.ios/Flutter/FlutterPluginRegistrant`)
+  - webview_flutter (from `../flutter_app/.ios/Flutter/.symlinks/webview_flutter/ios`)
 
 EXTERNAL SOURCES:
   Flutter:
     :path: "../flutter_app/.ios/Flutter/engine"
   FlutterPluginRegistrant:
     :path: "../flutter_app/.ios/Flutter/FlutterPluginRegistrant"
+  webview_flutter:
+    :path: "../flutter_app/.ios/Flutter/.symlinks/webview_flutter/ios"
 
 SPEC CHECKSUMS:
   Flutter: 58dd7d1b27887414a370fcccb9e645c08ffd7a6a
-  FlutterPluginRegistrant: 8855ca2b426d228cb41aa6c26c0c83b8c49e3593
+  FlutterPluginRegistrant: 6c5c8a8b145bba7bf1df5b028e53e6dc9a454c04
+  webview_flutter: 1aa7604e6cdb451a9b7ed2c37d5454c0b440246b
 
-PODFILE CHECKSUM: 5a8c56c4264916855dd33e100b1b90fb8aacd2a4
+PODFILE CHECKSUM: 0e111faafa0a518b88b940e57de0a08c874dd371
 
 COCOAPODS: 1.7.5

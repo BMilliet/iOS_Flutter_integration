@@ -8,9 +8,6 @@ class AppDelegate: FlutterAppDelegate {
   override func application(_ application: UIApplication, didFinishLaunchingWithOptions
     launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-//    let controller: FlutterViewController = window.rootViewController as! FlutterViewController
-//    GeneratedPluginRegistrant.register(with: self)
-
     window = UIWindow(frame: UIScreen.main.bounds)
 
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
