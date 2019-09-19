@@ -12,11 +12,11 @@ class FlutterManager {
     let flutterViewController = FlutterViewController(nibName: nil, bundle: nil)
     flutterViewController.setInitialRoute(initialRoute.rawValue)
     currenteView = flutterViewController
-    setMethodChannel(to: flutterViewController, with: viewController)
+    setMethodChannel(to: flutterViewController)
     viewController.present(flutterViewController, animated: true, completion: nil)
   }
 
-  private func setMethodChannel(to flutterViewController: FlutterViewController, with viewController: UIViewController) {
+  func setMethodChannel(to flutterViewController: FlutterViewController) {
     GeneratedPluginRegistrant.register(with: flutterViewController)
     let flutterChannel = FlutterMethodChannel(name: flutterChannelName, binaryMessenger: flutterViewController)
     flutterChannel.setMethodCallHandler({ method, result in
@@ -45,7 +45,7 @@ class FlutterManager {
   }
 
   private func openFlutterView() {
-    let topController = Helper.getTopMostViewController()!
+    let topController = Helper.getLastRootViewController()!
     self.present(on: topController, initialRoute: FlutterInitialRoute.initialSixthView)
   }
 
