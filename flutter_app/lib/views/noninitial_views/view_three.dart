@@ -26,14 +26,6 @@ class _ViewThreeState extends State<ViewThree> {
   }
 
   AppBar _appBar() {
-    return AppBar(
-      title: Text("Initial Seventh View"),
-      leading: IconButton(
-        icon: Icon(Icons.arrow_back_ios),
-        onPressed: () {
-          Channel().popFlutterView();
-        },
-      ),
-    );
+    return AppBar(title: Text("Webview"));
   }
 }

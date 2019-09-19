@@ -45,7 +45,7 @@ class _InitialSeventhViewState extends State<InitialSeventhView> {
             RaisedButton(
               child: Text("open camera"),
               onPressed: () {
-                //
+                Navigator.pushNamed(context, NamedRoutes.viewFour);
               },
             )
           ],
