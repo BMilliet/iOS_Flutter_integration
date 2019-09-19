@@ -14,6 +14,7 @@
 		1503F841232D1AAF00F99AE9 /* FlutterInitialRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1503F840232D1AAF00F99AE9 /* FlutterInitialRoute.swift */; };
 		1503F846232D1B9100F99AE9 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1503F845232D1B9100F99AE9 /* ViewController2.swift */; };
 		1503F848232D241E00F99AE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1503F847232D241E00F99AE9 /* Assets.xcassets */; };
+		152CDDB32333C9FE00C5B269 /* CustomFlutterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152CDDB22333C9FE00C5B269 /* CustomFlutterViewController.swift */; };
 		15ABD041232ED96100ED5A8D /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ABD040232ED96100ED5A8D /* ViewController3.swift */; };
 		15B3F8F82331862200FA0AA1 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B3F8F72331862200FA0AA1 /* MainTabBar.swift */; };
 		15B3F8FA2331941900FA0AA1 /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B3F8F92331941900FA0AA1 /* ViewController4.swift */; };
@@ -32,6 +33,7 @@
 		1503F840232D1AAF00F99AE9 /* FlutterInitialRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlutterInitialRoute.swift; sourceTree = "<group>"; };
 		1503F845232D1B9100F99AE9 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		1503F847232D241E00F99AE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		152CDDB22333C9FE00C5B269 /* CustomFlutterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFlutterViewController.swift; sourceTree = "<group>"; };
 		15ABD040232ED96100ED5A8D /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 		15B3F8F72331862200FA0AA1 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		15B3F8F92331941900FA0AA1 /* ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				15ABD040232ED96100ED5A8D /* ViewController3.swift */,
 				15B3F8F72331862200FA0AA1 /* MainTabBar.swift */,
 				15B3F8F92331941900FA0AA1 /* ViewController4.swift */,
+				152CDDB22333C9FE00C5B269 /* CustomFlutterViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				15B3F8F82331862200FA0AA1 /* MainTabBar.swift in Sources */,
 				15B3F8FA2331941900FA0AA1 /* ViewController4.swift in Sources */,
 				15FB16E92332AB3D002942DD /* UIViewController.swift in Sources */,
+				152CDDB32333C9FE00C5B269 /* CustomFlutterViewController.swift in Sources */,
 				15ABD041232ED96100ED5A8D /* ViewController3.swift in Sources */,
 				15FB16E6233261B2002942DD /* Helper.swift in Sources */,
 				1503F83E232D18A100F99AE9 /* FlutterManager.swift in Sources */,

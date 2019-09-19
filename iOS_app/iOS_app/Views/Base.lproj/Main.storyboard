@@ -10,6 +10,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Custom Flutter View Controller-->
+        <scene sceneID="h6a-yL-6th">
+            <objects>
+                <viewController id="Vem-la-2wY" customClass="CustomFlutterViewController" customModule="iOS_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DXZ-uI-wHK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="9bS-2Q-ftH"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="edd-gJ-Xip"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5F9-RG-9kK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1438" y="414"/>
+        </scene>
         <!--View Controller3-->
         <scene sceneID="nTL-Do-tf4">
             <objects>
@@ -238,6 +254,7 @@
                         <segue destination="duK-S9-MhT" kind="relationship" relationship="viewControllers" id="Kmv-Vl-mCy"/>
                         <segue destination="eOW-D2-9mB" kind="relationship" relationship="viewControllers" id="iCi-N2-NTs"/>
                         <segue destination="QQT-39-cNa" kind="relationship" relationship="viewControllers" id="ShM-U9-eiM"/>
+                        <segue destination="Vem-la-2wY" kind="relationship" relationship="viewControllers" id="Fmi-lE-pPN"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f9T-5e-yCh" userLabel="First Responder" sceneMemberID="firstResponder"/>
