@@ -46,7 +46,7 @@ class FlutterManager {
 
   private func openFlutterView() {
     let topController = Helper.getLastRootViewController()!
-    self.present(on: topController, initialRoute: FlutterInitialRoute.initialSixthView)
+    self.present(on: topController, initialRoute: FlutterInitialRoute.initialSeventhView)
   }
 
   private func popFlutterView(_ call: FlutterMethodCall) {

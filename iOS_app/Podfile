@@ -10,3 +10,5 @@ target 'iOS_app' do
   # Pods for iOS_app
 
 end
+
+load "webview_adjust.rb"
