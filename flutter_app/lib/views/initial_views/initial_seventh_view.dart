@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app/channel/channel.dart';
+import 'package:flutter_app/routes/named_routes.dart';
 
 class InitialSeventhView extends StatefulWidget {
   _InitialSeventhViewState createState() => _InitialSeventhViewState();
@@ -37,7 +38,7 @@ class _InitialSeventhViewState extends State<InitialSeventhView> {
             RaisedButton(
               child: Text("open webview"),
               onPressed: () {
-                //
+                Navigator.pushNamed(context, NamedRoutes.viewThree);
               },
             ),
             Container(height: 20),
