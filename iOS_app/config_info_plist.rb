@@ -1,7 +1,11 @@
-stuffed_str = 
+stuffed_str =
 """<dict>
   <key>io.flutter.embedded_views_preview</key>
-  <true/>"""
+  <true/>
+  <key>NSCameraUsageDescription</key>
+  <string>use camera</string>
+  <key>NSPhotoLibraryUsageDescription</key>
+  <string>use Photo Library</string>"""
 
 runner_infoplist = '../flutter_app/.ios/Runner/info.plist'
 original_content = File.read(runner_infoplist)

@@ -13,10 +13,10 @@ class ViewController1: UIViewController {
   }
 
   @IBAction func launchFirstInitialFlutterView(_ sender: Any) {
-    flutterManager.present(on: self, initialRoute: FlutterInitialRoute.initialFirstView)
+    flutterManager.present(initialRoute: FlutterInitialRoute.initialFirstView)
   }
   
   @IBAction func launchSecondInitialFlutterView(_ sender: Any) {
-    flutterManager.present(on: self, initialRoute: FlutterInitialRoute.initialSecondView)
+    flutterManager.present(initialRoute: FlutterInitialRoute.initialSecondView)
   }
 }

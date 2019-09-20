@@ -23,6 +23,6 @@ class ViewController2: UIViewController {
 
   @IBAction func launchThirdInitialFlutterView(_ sender: Any) {
     flutterManager.messageToFlutter = textField.text ?? ""
-    flutterManager.present(on: self, initialRoute: FlutterInitialRoute.initialThirdView)
+    flutterManager.present(initialRoute: FlutterInitialRoute.initialThirdView)
   }
 }

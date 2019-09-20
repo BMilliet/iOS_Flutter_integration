@@ -11,4 +11,4 @@ target 'iOS_app' do
 
 end
 
-load "webview_adjust.rb"
+load "config_info_plist.rb"
