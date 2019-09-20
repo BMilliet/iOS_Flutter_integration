@@ -14,6 +14,9 @@ class ViewController2: UIViewController {
     label.text = "iOS native view 2"
     label2.text = "send message to flutter!"
     view.backgroundColor = .orange
+
+    let tap = UITapGestureRecognizer(target: self, action: #selector(closeKeyBoard))
+    view.addGestureRecognizer(tap)
   }
 
   override func viewWillAppear(_ animated: Bool) {
@@ -24,5 +27,9 @@ class ViewController2: UIViewController {
   @IBAction func launchThirdInitialFlutterView(_ sender: Any) {
     flutterManager.messageToFlutter = textField.text ?? ""
     flutterManager.present(initialRoute: FlutterInitialRoute.initialThirdView)
+  }
+
+  @objc func closeKeyBoard() {
+    view.endEditing(true)
   }
 }
