@@ -4,6 +4,10 @@
 <dict>
 	<key>io.flutter.embedded_views_preview</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>use camera</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>use photo library</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

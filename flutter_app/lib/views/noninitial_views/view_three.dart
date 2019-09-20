@@ -2,7 +2,6 @@ import 'dart:async';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_app/channel/channel.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 class ViewThree extends StatefulWidget {
