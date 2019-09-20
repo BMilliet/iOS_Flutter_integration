@@ -24,6 +24,6 @@ class ViewController4: UIViewController {
   }
 
   @objc func buttonAction(sender: UIButton!) {
-    self.dismiss(animated: true, completion: nil)
+    self.navigationController?.popViewController(animated: true)
   }
 }

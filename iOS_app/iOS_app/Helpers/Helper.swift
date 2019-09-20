@@ -1,7 +1,7 @@
 import UIKit
 
 class Helper {
-  static func getLastRootViewController() -> UIViewController? {
+  static func getRootViewController() -> UIViewController? {
     return UIApplication.shared.keyWindow?.rootViewController
   }
 }

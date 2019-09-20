@@ -4,16 +4,15 @@ import FlutterPluginRegistrant
 class FlutterManager {
 
   private let flutterChannelName = "flutter_app_channel"
+  private let router = Router()
   var messageFromFlutter = ""
   var messageToFlutter = ""
-  var currenteView: UIViewController?
 
-  func present(on viewController: UIViewController, initialRoute: FlutterInitialRoute) {
+  func present(initialRoute: FlutterInitialRoute) {
     let flutterViewController = FlutterViewController(nibName: nil, bundle: nil)
     flutterViewController.setInitialRoute(initialRoute.rawValue)
-    currenteView = flutterViewController
     setMethodChannel(to: flutterViewController)
-    viewController.present(flutterViewController, animated: true, completion: nil)
+    router.push(flutterViewController)
   }
 
   func setMethodChannel(to flutterViewController: FlutterViewController) {
@@ -41,17 +40,16 @@ class FlutterManager {
 
   private func openiOSView() {
     let controller = ViewController4()
-    Helper.getLastRootViewController()!.present(controller, animated: false, completion: nil)
+    router.push(controller)
   }
 
   private func openFlutterView() {
-    let topController = Helper.getLastRootViewController()!
-    self.present(on: topController, initialRoute: FlutterInitialRoute.initialSeventhView)
+    self.present(initialRoute: FlutterInitialRoute.initialSeventhView)
   }
 
   private func popFlutterView(_ call: FlutterMethodCall) {
     let animated = call.arguments as! Bool
-    currenteView?.dismiss(animated: animated, completion: nil)
+    router.pop(animated)
   }
 
   private func methodNotFound() {
