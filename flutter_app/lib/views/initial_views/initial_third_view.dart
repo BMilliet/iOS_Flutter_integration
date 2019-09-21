@@ -32,41 +32,43 @@ class _InitialThirdViewState extends State<InitialThirdView> {
   }
 
   Widget _body() {
-    return FutureBuilder(
-        future: _messageFromIOS,
-        builder: (context, snapshot) {
-          if (snapshot.hasData) {
-            return Container(
-                color: Colors.cyan,
-                child: Center(
-                    child: Column(
-                  children: <Widget>[
-                    Container(
-                      margin: EdgeInsets.only(top: 50),
-                      child: Text("Flutter view"),
-                    ),
-                    Container(
-                      margin: EdgeInsets.only(top: 50, bottom: 50),
-                      child: Text(snapshot.data),
-                    ),
-                    Container(
-                      margin: EdgeInsets.all(50),
-                      child: Form(
-                        child: TextFormField(
-                          controller: _textFieldController,
+    return SingleChildScrollView(
+        child: FutureBuilder(
+            future: _messageFromIOS,
+            builder: (context, snapshot) {
+              if (snapshot.hasData) {
+                return Container(
+                    color: Colors.cyan,
+                    child: Center(
+                        child: Column(
+                      children: <Widget>[
+                        Container(
+                          margin: EdgeInsets.only(top: 50),
+                          child: Text("Flutter view"),
                         ),
-                      ),
-                    ),
-                    RaisedButton(
-                      child: Text("Send message to iOS"),
-                      onPressed: () {
-                        _channel.sendMessageToIOS(_textFieldController.text);
-                        _channel.popFlutterView();
-                      },
-                    )
-                  ],
-                )));
-          }
-        });
+                        Container(
+                          margin: EdgeInsets.only(top: 50, bottom: 50),
+                          child: Text(snapshot.data),
+                        ),
+                        Container(
+                          margin: EdgeInsets.all(50),
+                          child: Form(
+                            child: TextFormField(
+                              controller: _textFieldController,
+                            ),
+                          ),
+                        ),
+                        RaisedButton(
+                          child: Text("Send message to iOS"),
+                          onPressed: () {
+                            _channel
+                                .sendMessageToIOS(_textFieldController.text);
+                            _channel.popFlutterView();
+                          },
+                        )
+                      ],
+                    )));
+              }
+            }));
   }
 }
