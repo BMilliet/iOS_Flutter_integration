@@ -22,7 +22,7 @@ The main goal of this app is to test possible integration flows when adding a Fl
 
 ![](gifs/gif5.gif)
 
-6 - Navigation from Flutter view to another initial Flutter initial route and native view
+6 - Navigation from Flutter view to another initial Flutter view and native view
     
   Also in this case, the Flutter view is using plugins to open webview, camera and gallery.
   The idea was to solve conflicts with plugins that were using native resources.
