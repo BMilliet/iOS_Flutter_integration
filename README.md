@@ -1,6 +1,7 @@
 # iOS_Flutter_integration
 
 The main goal of this app is to test possible integration flows when adding a Flutter module to an existing native Swift iOS app.
+The native iOS views are in orange and the Flutter views are in cyan.
 
 1 - Flutter views in an navite tabbar
 
