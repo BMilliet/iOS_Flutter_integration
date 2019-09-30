@@ -8,7 +8,7 @@ class FlutterManager {
   var messageFromFlutter = ""
   var messageToFlutter = ""
 
-  func present(initialRoute: FlutterInitialRoute) {
+  func push(initialRoute: FlutterInitialRoute) {
     let flutterViewController = FlutterViewController(nibName: nil, bundle: nil)
     flutterViewController.setInitialRoute(initialRoute.rawValue)
     flutterViewController.splashScreenView = getSplash()
@@ -45,7 +45,7 @@ class FlutterManager {
   }
 
   private func openFlutterView() {
-    self.present(initialRoute: FlutterInitialRoute.initialSeventhView)
+    self.push(initialRoute: FlutterInitialRoute.initialSeventhView)
   }
 
   private func popFlutterView(_ call: FlutterMethodCall) {
