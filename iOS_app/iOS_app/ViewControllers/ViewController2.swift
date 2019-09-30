@@ -26,7 +26,7 @@ class ViewController2: UIViewController {
 
   @IBAction func launchThirdInitialFlutterView(_ sender: Any) {
     flutterManager.messageToFlutter = textField.text ?? ""
-    flutterManager.present(initialRoute: FlutterInitialRoute.initialThirdView)
+    flutterManager.push(initialRoute: FlutterInitialRoute.initialThirdView)
   }
 
   @objc func closeKeyBoard() {

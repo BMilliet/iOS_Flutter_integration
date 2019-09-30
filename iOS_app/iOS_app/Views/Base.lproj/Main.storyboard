@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Custom Flutter View Controller1-->
+        <!--Flutter View Controller1-->
         <scene sceneID="h6a-yL-6th">
             <objects>
-                <viewController id="Vem-la-2wY" customClass="CustomFlutterViewController1" customModule="iOS_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Vem-la-2wY" customClass="FlutterViewController1" customModule="iOS_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DXZ-uI-wHK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -26,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="-591" y="1065"/>
         </scene>
-        <!--Custom Flutter View Controller2-->
+        <!--Flutter View Controller2-->
         <scene sceneID="0Wc-9o-ACf">
             <objects>
-                <viewController id="7l4-m3-xdw" customClass="CustomFlutterViewController2" customModule="iOS_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="7l4-m3-xdw" customClass="FlutterViewController2" customModule="iOS_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yXL-sf-HCP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

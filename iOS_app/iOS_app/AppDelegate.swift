@@ -9,6 +9,7 @@ class AppDelegate: FlutterAppDelegate {
     launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
     window = UIWindow(frame: UIScreen.main.bounds)
+    FlutterEngineProvider.shared.startEngine()
 
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
     let rootViewController = storyboard.instantiateViewController(withIdentifier: "MainTabBar") as UIViewController

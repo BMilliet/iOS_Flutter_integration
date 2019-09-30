@@ -11,6 +11,6 @@ class ViewController3: UIViewController {
   }
 
   @IBAction func launchFlutterView(_ sender: Any) {
-    FlutterManager().present(initialRoute: FlutterInitialRoute.initialSixthView)
+    FlutterManager().push(initialRoute: FlutterInitialRoute.initialSixthView)
   }
 }
