@@ -18,7 +18,7 @@ class ViewController4: UIViewController {
   private func createButton() {
     let button = UIButton(frame: CGRect(x: 50, y: 100, width: 200, height: 50))
     button.backgroundColor = .blue
-    button.setTitle("Back to main iOS tabbar", for: .normal)
+    button.setTitle("Back", for: .normal)
     button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
     self.view.addSubview(button)
   }

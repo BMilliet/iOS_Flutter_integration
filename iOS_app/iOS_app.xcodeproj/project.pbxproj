@@ -102,7 +102,6 @@
 				1503F83D232D18A100F99AE9 /* FlutterManager.swift */,
 				1503F840232D1AAF00F99AE9 /* FlutterInitialRoute.swift */,
 				153B6644234586AF0074A4FF /* FlutterMethodHandler.swift */,
-				15692E43234613710054B64C /* MessageProvider.swift */,
 			);
 			path = Flutter;
 			sourceTree = "<group>";
@@ -139,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				15FB16E5233261B2002942DD /* Helper.swift */,
+				15692E43234613710054B64C /* MessageProvider.swift */,
 				15FD9C7123354ACA0073EF72 /* Router.swift */,
 			);
 			path = Helpers;
