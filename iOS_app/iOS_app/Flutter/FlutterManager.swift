@@ -18,7 +18,7 @@ class FlutterManager {
 
   func setMethodChannel(to flutterViewController: FlutterViewController) {
     GeneratedPluginRegistrant.register(with: flutterViewController)
-    let flutterChannel = FlutterMethodChannel(name: flutterChannelName, binaryMessenger: flutterViewController)
+    let flutterChannel = FlutterMethodChannel(name: flutterChannelName, binaryMessenger: flutterViewController as! FlutterBinaryMessenger)
     flutterChannel.setMethodCallHandler({ method, result in
       switch method.method {
       case "getMessageFromIOS": result(self.sendMessageToFlutter())

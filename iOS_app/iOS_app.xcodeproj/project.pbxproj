@@ -17,13 +17,11 @@
 		152CDDB32333C9FE00C5B269 /* FlutterViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152CDDB22333C9FE00C5B269 /* FlutterViewController1.swift */; };
 		152CDDB72333EE7E00C5B269 /* FlutterViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152CDDB62333EE7E00C5B269 /* FlutterViewController2.swift */; };
 		152CDDBB233427E600C5B269 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152CDDBA233427E600C5B269 /* MainTabBar.swift */; };
-		1591BBDA234154CA009EF90C /* CustomFlutterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1591BBD9234154CA009EF90C /* CustomFlutterViewController.swift */; };
-		159FE91123410B2C0075C8C4 /* FlutterEngineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159FE91023410B2C0075C8C4 /* FlutterEngineProvider.swift */; };
 		15ABD041232ED96100ED5A8D /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ABD040232ED96100ED5A8D /* ViewController3.swift */; };
 		15B3F8FA2331941900FA0AA1 /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B3F8F92331941900FA0AA1 /* ViewController4.swift */; };
 		15FB16E6233261B2002942DD /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FB16E5233261B2002942DD /* Helper.swift */; };
 		15FD9C7223354ACA0073EF72 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FD9C7123354ACA0073EF72 /* Router.swift */; };
-		19E6AEC32CECFB1492BA217D /* Pods_iOS_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4583B009591274C95863A1F2 /* Pods_iOS_app.framework */; };
+		C5CB3A8C9C93B90B05E6807A /* libPods-iOS_app.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 697963F2129D07720D20F303 /* libPods-iOS_app.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,13 +37,11 @@
 		152CDDB22333C9FE00C5B269 /* FlutterViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlutterViewController1.swift; sourceTree = "<group>"; };
 		152CDDB62333EE7E00C5B269 /* FlutterViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlutterViewController2.swift; sourceTree = "<group>"; };
 		152CDDBA233427E600C5B269 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
-		1591BBD9234154CA009EF90C /* CustomFlutterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFlutterViewController.swift; sourceTree = "<group>"; };
-		159FE91023410B2C0075C8C4 /* FlutterEngineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlutterEngineProvider.swift; sourceTree = "<group>"; };
 		15ABD040232ED96100ED5A8D /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 		15B3F8F92331941900FA0AA1 /* ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
 		15FB16E5233261B2002942DD /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		15FD9C7123354ACA0073EF72 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		4583B009591274C95863A1F2 /* Pods_iOS_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		697963F2129D07720D20F303 /* libPods-iOS_app.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS_app.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C38C65AF76BB71FEDF8A5C1 /* Pods-iOS_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_app.release.xcconfig"; path = "Target Support Files/Pods-iOS_app/Pods-iOS_app.release.xcconfig"; sourceTree = "<group>"; };
 		98BF241E306A7F264798FEB2 /* Pods-iOS_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_app.debug.xcconfig"; path = "Target Support Files/Pods-iOS_app/Pods-iOS_app.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -55,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19E6AEC32CECFB1492BA217D /* Pods_iOS_app.framework in Frameworks */,
+				C5CB3A8C9C93B90B05E6807A /* libPods-iOS_app.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,8 +97,6 @@
 				152CDDB62333EE7E00C5B269 /* FlutterViewController2.swift */,
 				1503F83D232D18A100F99AE9 /* FlutterManager.swift */,
 				1503F840232D1AAF00F99AE9 /* FlutterInitialRoute.swift */,
-				159FE91023410B2C0075C8C4 /* FlutterEngineProvider.swift */,
-				1591BBD9234154CA009EF90C /* CustomFlutterViewController.swift */,
 			);
 			path = Flutter;
 			sourceTree = "<group>";
@@ -147,7 +141,7 @@
 		AD19072E74CE517E8476A98E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4583B009591274C95863A1F2 /* Pods_iOS_app.framework */,
+				697963F2129D07720D20F303 /* libPods-iOS_app.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -169,7 +163,7 @@
 			buildConfigurationList = 1503F839232D142400F99AE9 /* Build configuration list for PBXNativeTarget "iOS_app" */;
 			buildPhases = (
 				9B3C6A76595998DB7299D4DB /* [CP] Check Pods Manifest.lock */,
-				1503F83C232D153C00F99AE9 /* ShellScript */,
+				0E2ABB80EF3DFA5E7A09B70A /* [CP-User] Run Flutter Build Script */,
 				1503F823232D142400F99AE9 /* Sources */,
 				1503F824232D142400F99AE9 /* Frameworks */,
 				1503F825232D142400F99AE9 /* Resources */,
@@ -230,22 +224,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1503F83C232D153C00F99AE9 /* ShellScript */ = {
+		0E2ABB80EF3DFA5E7A09B70A /* [CP-User] Run Flutter Build Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
+				"${SRCROOT}/../flutter_app/.metadata",
+				"${SRCROOT}/../flutter_app/.ios/Flutter/App.framework/App",
+				"${SRCROOT}/../flutter_app/.ios/Flutter/engine/Flutter.framework/Flutter",
+				"${SRCROOT}/../flutter_app/.ios/Flutter/flutter_export_environment.sh",
 			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
+			name = "[CP-User] Run Flutter Build Script";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" build\n\"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" embed\n";
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../flutter_app/.ios/Flutter/flutter_export_environment.sh\"\n\"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
 		};
 		9B3C6A76595998DB7299D4DB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -301,9 +294,7 @@
 				152CDDBB233427E600C5B269 /* MainTabBar.swift in Sources */,
 				152CDDB32333C9FE00C5B269 /* FlutterViewController1.swift in Sources */,
 				15ABD041232ED96100ED5A8D /* ViewController3.swift in Sources */,
-				1591BBDA234154CA009EF90C /* CustomFlutterViewController.swift in Sources */,
 				15FB16E6233261B2002942DD /* Helper.swift in Sources */,
-				159FE91123410B2C0075C8C4 /* FlutterEngineProvider.swift in Sources */,
 				1503F83E232D18A100F99AE9 /* FlutterManager.swift in Sources */,
 				1503F82B232D142400F99AE9 /* AppDelegate.swift in Sources */,
 				1503F841232D1AAF00F99AE9 /* FlutterInitialRoute.swift in Sources */,
@@ -447,7 +438,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L8A5CGJRMF;
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = iOS_app/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -467,7 +458,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L8A5CGJRMF;
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = iOS_app/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
