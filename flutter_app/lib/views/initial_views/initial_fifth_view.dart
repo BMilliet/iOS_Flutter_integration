@@ -7,6 +7,8 @@ class InitialFifthView extends StatefulWidget {
 }
 
 class _InitialFifthViewState extends State<InitialFifthView> {
+  Channel _channel = Channel();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(appBar: _appBar(), body: _body());
@@ -31,14 +33,14 @@ class _InitialFifthViewState extends State<InitialFifthView> {
             RaisedButton(
               child: Text("Next flutter view"),
               onPressed: () {
-                Channel().openFlutterView();
+                _channel.openFlutterView();
               },
             ),
             Container(height: 20),
             RaisedButton(
               child: Text("Next iOS view"),
               onPressed: () {
-                Channel().openiOSView();
+                _channel.openiOSView();
               },
             )
           ],

@@ -21,11 +21,11 @@ class ViewController2: UIViewController {
 
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
-    flutterLabel.text = flutterMethodHandler.messageFromFlutter
+    flutterLabel.text = MessageProvider.shared.messageFromFlutter
   }
 
   @IBAction func launchThirdInitialFlutterView(_ sender: Any) {
-    flutterMethodHandler.messageToFlutter = textField.text ?? ""
+    MessageProvider.shared.messageToFlutter = textField.text ?? ""
     FlutterManager().push(initialRoute: FlutterInitialRoute.initialThirdView)
   }
 

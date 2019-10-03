@@ -36,7 +36,7 @@ class _ViewTwoState extends State<ViewTwo> {
             RaisedButton(
               child: Text("Go to another iOS"),
               onPressed: () {
-                _channel.popFlutterView(animated: false);
+                //_channel.popFlutterView(animated: false);
                 _channel.openiOSView();
               },
             )

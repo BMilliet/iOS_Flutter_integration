@@ -18,6 +18,7 @@
 		152CDDB72333EE7E00C5B269 /* FlutterViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152CDDB62333EE7E00C5B269 /* FlutterViewController2.swift */; };
 		152CDDBB233427E600C5B269 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152CDDBA233427E600C5B269 /* MainTabBar.swift */; };
 		153B6645234586AF0074A4FF /* FlutterMethodHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153B6644234586AF0074A4FF /* FlutterMethodHandler.swift */; };
+		15692E44234613710054B64C /* MessageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15692E43234613710054B64C /* MessageProvider.swift */; };
 		15ABD041232ED96100ED5A8D /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ABD040232ED96100ED5A8D /* ViewController3.swift */; };
 		15B3F8FA2331941900FA0AA1 /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B3F8F92331941900FA0AA1 /* ViewController4.swift */; };
 		15FB16E6233261B2002942DD /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FB16E5233261B2002942DD /* Helper.swift */; };
@@ -39,6 +40,7 @@
 		152CDDB62333EE7E00C5B269 /* FlutterViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlutterViewController2.swift; sourceTree = "<group>"; };
 		152CDDBA233427E600C5B269 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		153B6644234586AF0074A4FF /* FlutterMethodHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlutterMethodHandler.swift; sourceTree = "<group>"; };
+		15692E43234613710054B64C /* MessageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageProvider.swift; sourceTree = "<group>"; };
 		15ABD040232ED96100ED5A8D /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 		15B3F8F92331941900FA0AA1 /* ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
 		15FB16E5233261B2002942DD /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				1503F83D232D18A100F99AE9 /* FlutterManager.swift */,
 				1503F840232D1AAF00F99AE9 /* FlutterInitialRoute.swift */,
 				153B6644234586AF0074A4FF /* FlutterMethodHandler.swift */,
+				15692E43234613710054B64C /* MessageProvider.swift */,
 			);
 			path = Flutter;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				152CDDB32333C9FE00C5B269 /* FlutterViewController1.swift in Sources */,
 				15ABD041232ED96100ED5A8D /* ViewController3.swift in Sources */,
 				15FB16E6233261B2002942DD /* Helper.swift in Sources */,
+				15692E44234613710054B64C /* MessageProvider.swift in Sources */,
 				1503F83E232D18A100F99AE9 /* FlutterManager.swift in Sources */,
 				1503F82B232D142400F99AE9 /* AppDelegate.swift in Sources */,
 				1503F841232D1AAF00F99AE9 /* FlutterInitialRoute.swift in Sources */,
