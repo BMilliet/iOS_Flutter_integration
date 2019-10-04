@@ -12,7 +12,7 @@ class FlutterManager {
 
   private func getSplash() -> UIView {
     let splash = UIView(frame: CGRect())
-    splash.backgroundColor = UIColor(red: 0, green: 188, blue: 212, alpha: 1)
+    splash.backgroundColor = UIColor(red: 0, green: 188/255, blue: 212/255, alpha: 1)
     return splash
   }
 }
