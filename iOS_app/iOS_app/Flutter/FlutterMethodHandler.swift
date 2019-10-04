@@ -8,7 +8,10 @@ class FlutterMethodHandler {
 
   func setMethodChannel(to flutterViewController: FlutterViewController) {
     GeneratedPluginRegistrant.register(with: flutterViewController)
-    let flutterChannel = FlutterMethodChannel(name: flutterChannelName, binaryMessenger: flutterViewController as! FlutterBinaryMessenger)
+    guard let binaryMessenger = flutterViewController as? FlutterBinaryMessenger else {
+      return
+    }
+    let flutterChannel = FlutterMethodChannel(name: flutterChannelName, binaryMessenger: binaryMessenger)
     flutterChannel.setMethodCallHandler({ method, result in
       switch method.method {
       case "getMessageFromIOS": result(self.sendMessageToFlutter())
