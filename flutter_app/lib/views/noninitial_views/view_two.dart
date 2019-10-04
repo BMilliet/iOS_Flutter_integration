@@ -7,8 +7,6 @@ class ViewTwo extends StatefulWidget {
 }
 
 class _ViewTwoState extends State<ViewTwo> {
-  final _channel = Channel();
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,8 +34,7 @@ class _ViewTwoState extends State<ViewTwo> {
             RaisedButton(
               child: Text("Go to another iOS"),
               onPressed: () {
-                _channel.popFlutterView(animated: false);
-                _channel.openiOSView();
+                Channel().openiOSView();
               },
             )
           ],

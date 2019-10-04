@@ -7,7 +7,7 @@ class ViewController2: UIViewController {
   @IBOutlet weak var textField: UITextField!
   @IBOutlet weak var flutterLabel: UILabel!
 
-  let flutterManager = FlutterManager()
+  let flutterMethodHandler = FlutterMethodHandler()
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -21,12 +21,12 @@ class ViewController2: UIViewController {
 
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
-    flutterLabel.text = flutterManager.messageFromFlutter
+    flutterLabel.text = MessageProvider.shared.messageFromFlutter
   }
 
   @IBAction func launchThirdInitialFlutterView(_ sender: Any) {
-    flutterManager.messageToFlutter = textField.text ?? ""
-    flutterManager.push(initialRoute: FlutterInitialRoute.initialThirdView)
+    MessageProvider.shared.messageToFlutter = textField.text ?? ""
+    FlutterManager().push(initialRoute: FlutterInitialRoute.initialThirdView)
   }
 
   @objc func closeKeyBoard() {
