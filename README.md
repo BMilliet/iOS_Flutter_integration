@@ -37,7 +37,7 @@ The native iOS views are in orange and the Flutter views are in cyan.
 
 ![](gifs/gif6.gif)
     
-  Also in this case, the Flutter view is using plugins to open webview, camera and gallery.
+  In this case, the Flutter view is using plugins to open webview, camera and gallery (works only on device).
   The idea was to solve conflicts with plugins that were using native resources.
   It was possible to solve by adding a custom Ruby script in the Podfile to make the necessary adjusts
 in info.plist inside the generated .ios.
