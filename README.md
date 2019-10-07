@@ -2,6 +2,15 @@
 
 The main goal of this app is to test possible integration flows when adding a Flutter module to an existing native Swift iOS app.
 
+To run the app go inside flutter_app dir and do the command:
+```
+flutter pub get
+```
+After this, go to iOS_app and do the command:
+```
+pod install
+```
+
 The native iOS views are in orange and the Flutter views are in cyan.
 
 1 - Flutter views in an navite tabbar
