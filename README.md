@@ -2,6 +2,11 @@
 
 The main goal of this app is to test possible integration flows when adding a Flutter module to an existing native Swift iOS app.
 
+## Info
+
+This app is using Add-to-App integration.
+It needs to be on ```master channel``` of Flutter
+
 To run the app go inside flutter_app dir and do the command:
 ```
 flutter pub get
@@ -10,6 +15,8 @@ After this, go to iOS_app and do the command:
 ```
 pod install
 ```
+
+## Description
 
 The native iOS views are in orange and the Flutter views are in cyan.
 
